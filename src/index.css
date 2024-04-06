@@ -16,7 +16,7 @@
 	--border-color2: hsl(214, 17%, 92%);
 
 
-	--body-bg: #f8f9fa;
+	--body-bg: #3d272d;
 
 	--quick-silver: hsl(0, 0%, 65%);
 	--radical-red: hsl(351, 83%, 61%);
@@ -126,7 +126,7 @@
 
 body {
 	font-family: var(--ff-poppins);
-	background-color: var(--white);
+	background-color: var(--body-bg);
 	line-height: var(--lh-1);
 	-webkit-font-smoothing: antialiased;
 }
@@ -179,7 +179,7 @@ h4,
 h5,
 h6,
 a {
-	color: var(--spooky-black-1);
+	color: var(--white_50);
 }
 
 i {
@@ -246,13 +246,13 @@ i {
 	margin-right: 0px;
 }
 
-.contact__list {
+.card__list {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 	gap: 1rem;
 }
 
-.contact__item {
+.card__item {
 	width: 100%;
 	background-color: #ecf1f1;
 	padding: .88rem;
@@ -262,7 +262,7 @@ i {
 	/* max-width: 280px; */
 }
 
-.contact__header {
+.card__header {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -271,11 +271,11 @@ i {
 	column-gap: 12px;
 }
 
-.contact__image {
+.card__image {
 	width: 50px;
 }
 
-.contact__image img {
+.card__image img {
 	width: 100%;
 	border: 3px solid var(--selective-blue);
 	aspect-ratio: 1 / 1;
@@ -284,14 +284,14 @@ i {
 	border-radius: var(--radius-circle);
 }
 
-.contact_name {
+.card_name {
 	color: #3c3f3f;
 	font-size: 1.25rem;
 	text-align: center;
 	font-weight: 600;
 }
 
-.contact_title {
+.card_title {
 	font-size: 11px;
 	background-color: #dfe7e8;
 	color: var(--kappel);
@@ -301,29 +301,29 @@ i {
 	padding: 2px;
 }
 
-.contact__body {
+.card__body {
 	margin-top: 1rem;
 }
 
-/* .contact__body>p:not(:last-child) {
+/* .card__body>p:not(:last-child) {
 	margin-bottom: .35rem;
 } */
 
-.contact__body>p {
+.card__body>p {
 	font-size: 14px;
 	margin-bottom: .35rem;
 	margin-left: 8px;
 	font-weight: 500;
 }
 
-.contact__body>p i {
+.card__body>p i {
 	color: #75777a;
 	font-size: 20px;
 	margin-right: 8px;
 	-webkit-text-stroke: .5px;
 }
 
-.contact__body>p i::before {
+.card__body>p i::before {
 	color: var(--kappel);
 	background-color: #dfe7e8;
 	padding: 7px;
