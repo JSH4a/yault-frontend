@@ -4,9 +4,9 @@
 	--selective-blue-2: hsl(210, 69%, 19%);
 	--selective-blue-3: hsl(210, 69%, 35%);
 	--sky-blue: hsl(220, 48%, 90%);
-	--light-gray: hsl(233, 100%, 98%);
+	--light-gray: hsl(322, 13%, 63%);
 	--light-gray-2: hsl(233, 100%, 88%);
-	--dark-gray: hsl(225, 20%, 48%);
+	--dark-gray: hsl(344, 17%, 26%);
 	--white: hsl(0, 0%, 100%);
 	--spooky-black-1: hsl(0, 0%, 9%);
 	--spooky-black-2: hsl(180, 3%, 7%);
@@ -16,7 +16,7 @@
 	--border-color2: hsl(214, 17%, 92%);
 
 
-	--body-bg: #3d272d;
+	--body-bg: #281c1f;
 
 	--quick-silver: hsl(0, 0%, 65%);
 	--radical-red: hsl(351, 83%, 61%);
@@ -29,7 +29,6 @@
 	--white_50: hsla(0, 0%, 100%, 0.5);
 	--black_50: hsla(0, 0%, 0%, 0.5);
 	--black_30: hsla(0, 0%, 0%, 0.3);
-	--kappel: hsl(170, 75%, 41%);
 	--kappel: hsl(195, 71%, 31%);
 
 	/**
@@ -209,7 +208,7 @@ i {
 }
 
 .btn {
-	color: var(--white);
+	color: var(--light-gray);
 	background-color: var(--selective-blue);
 	font-size: .8rem;
 	padding: 3px 10px;
@@ -254,7 +253,7 @@ i {
 
 .card__item {
 	width: 100%;
-	background-color: #ecf1f1;
+	background-color: var(--dark-gray);
 	padding: .88rem;
 	border-radius: var(--radius-5);
 	cursor: pointer;
@@ -277,7 +276,7 @@ i {
 
 .card__image img {
 	width: 100%;
-	border: 3px solid var(--selective-blue);
+	border: 3px solid var(--black_30);
 	aspect-ratio: 1 / 1;
 	object-fit: cover;
 	object-position: center;
@@ -285,7 +284,7 @@ i {
 }
 
 .card_name {
-	color: #3c3f3f;
+	color: var(--light-gray);
 	font-size: 1.25rem;
 	text-align: center;
 	font-weight: 600;
@@ -317,15 +316,15 @@ i {
 }
 
 .card__body>p i {
-	color: #75777a;
+	color: #816a4a;
 	font-size: 20px;
 	margin-right: 8px;
 	-webkit-text-stroke: .5px;
 }
 
 .card__body>p i::before {
-	color: var(--kappel);
-	background-color: #dfe7e8;
+	color: var(--white_50);
+	background-color: #626b6d;
 	padding: 7px;
 	border-radius: var(--radius-circle);
 }
